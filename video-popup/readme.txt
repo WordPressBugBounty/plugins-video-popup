@@ -1,205 +1,140 @@
 ﻿=== Video PopUp ===
 Contributors: Alobaidi
 Tags: video popup, youtube lightbox, popup, video lightbox, lightbox
-Requires at least: 2.6.0
-Tested up to: 6.6.1
-Stable tag: 1.1.4
-Requires PHP: 5.2.4
+Requires at least: 5.8
+Tested up to: 6.9
+Stable tag: 2.0.3
+Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Video Popup plugin lets you to make video lightbox popup. YouTube, Vimeo, SoundCloud, and MP4 self hosted video are supported.
+The ultimate Video Popup plugin for WordPress. Create unlimited and responsive popups for YouTube, Vimeo, MP4 & WebM videos on click or On-Page Load.
 
 == Description ==
 
-### The #1 WordPress Video Lightbox Plugin
+### Trusted Video Popup Plugin for WordPress Since 2016
 
-Video Popup plugin lets you to make video lightbox popup easily. YouTube, Vimeo, SoundCloud, and MP4 self hosted video are supported, and you can display Popup Video on page load.
+The ultimate Video Popup plugin for WordPress. Smart, flexible, and made for easy control. Create unlimited, elegant, and responsive popups for YouTube, Vimeo, MP4 & WebM videos on click or On-Page Load.
 
-**Over 20 Live Demos**
+### Since 2016
 
-1. Popup video lightbox demos (on click): [https://wp-plugins.in/VP-Live-Demos](https://wp-plugins.in/VP-Live-Demos)
-2. Explanation of Use: [https://wp-plugins.in/VideoPopUp-Usage](https://wp-plugins.in/VideoPopUp-Usage)
-3. The Documentation and Reference: [https://wp-plugins.in/video-popup](https://wp-plugins.in/video-popup)
+Since 2016, the Video Popup plugin has been trusted by thousands of WordPress users. Thanks to its numerous features and high qualit and high quality, it remains the go-to solution for anyone looking to display videos in a modern and user-friendly way. The plugin's long-standing reputation reflects its reliability, flexibility, and commitment to excellence.
 
-**Popup Video on Page Load**
+### Summary of Key Features
+1. Create unlimited popups for YouTube, Vimeo, MP4, and WebM videos.
+2. Elegant, and Responsive Design.
+3. User-friendly builder in the Classic Editor for easy popup creation.
+4. Shortcode support for Gutenberg and any page builders.
+5. Public On-Page Load feature to display a video as a popup on multiple locations at once, like all posts or all pages.
+6. Detailed explanations under every option.
+7. Lightweight code for fast performance.
 
-1. Popup video on Page Loading with the alignment options (live demo): [https://wp-plugins.in/VP-On-Page-Load-Align](https://wp-plugins.in/VP-On-Page-Load-Align)
-2. Popup video on Page Loading without the alignment options (live demo): [https://wp-plugins.in/VP-On-Page-Load](https://wp-plugins.in/VP-On-Page-Load)
+And more!
 
-**The Features**
+### Live Demos
 
-Visual lightbox builder, new design, responsive lightbox, popup video on page load, and many features:
+[Explore 30+ Live Demos](https://wp-time.com/video-popup-plugin-for-wordpress/#live-demo)
 
-1. YouTube, Vimeo, SoundCloud, and MP4 self hosted video support. Also support MP4 video from external link.
-2. Visual Editor (Video Popup Visual Builder) with Editor Style.
-3. Unlimited Popup’s.
-4. **[Popup Video on Page Load (new!)](https://wp-plugins.in/VP-On-Page-Load-Align)**.
-5. Alignment options for the Popup Video on page loading feature (New!).
-6. Flex Design (a new design).
-7. Responsive Style.
-8. Retina Ready.
-9. All the YouTube Options:
-	1. Disable Related Videos [(changed)](https://developers.google.com/youtube/player_parameters#release_notes_08_23_2018), Controls (YouTube player), and video Annotations.
-	2. Display YouTube video image automatically (just one click!).
-	3. Starting Time (playing the video at the time you specify).
-	4. Ending Time (turning off the video at the time you specify).
-10. Autoplay Support for YouTube, Vimeo, SoundCloud, and MP4 Video.
-11. Display video in a lightbox when click on an image (for YouTube, Vimeo, SoundCloud, and MP4 Video).
-12. Customizing the Width and Height Size for YouTube, Vimeo, SoundCloud, and MP4 Video.
-13. Customizing the Color of Overlay for YouTube, Vimeo, SoundCloud, and MP4 Video.
-14. Shortcode Support with all the Attributes.
-15. General Settings.
-16. Shortcode Usage Page.
-17. Easy to Use.
-18. And More!
+### On-Page Load Feature
 
-### You might like it
-* McPopup Plugin – Popup Form for Mailchimp: [https://wordpress.org/plugins/mcpopup-popup-form-for-mailchimp/](https://wordpress.org/plugins/mcpopup-popup-form-for-mailchimp/)
-* Preloader Plugin: [https://wordpress.org/plugins/the-preloader/](https://wordpress.org/plugins/the-preloader/)
+With the Public On-Page Load, you can set up a video to automatically show as a popup on multiple locations at once, like all posts or all pages. This feature is perfect for video marketing and product promotion, ensuring your message instantly reaches every visitor without any clicks. Capture attention, boost engagement!
 
-### Rate
+[Live Demo](https://wp-time.com/public-on-page-load-video-popup-live-demo/)
 
-* [Please rate the plugin](https://wordpress.org/support/plugin/video-popup/reviews/?filter=5)
-* [Read people reviews](https://wordpress.org/support/plugin/video-popup/reviews/?filter=5)
+### Get Started
 
-### More Plugins
+Get started in just three simple steps:
 
-* [Our Plugins](https://profiles.wordpress.org/alobaidi#content-plugins)
+1. **[Install the Plugin](https://wp-time.com/video-popup-plugin-for-wordpress/#download-and-installation)**.
+2. **Create Your First Popup:** Follow the [step-by-step explanation](https://wp-time.com/video-popup-plugin-for-wordpress/#create-popup).
+3. **Set Up On-Page Load Popup:** Go to the **"Video Popup"** menu in your WordPress admin dashboard > **"Public On-Page Load"** and follow the instructions. You'll find detailed explanations for every option.
+
+Enjoy!
+
+### You May Also Like - From Our Plugins
+
+[Preloader Plugin](https://wordpress.org/plugins/the-preloader/) - Add a preloader to your website easily in only 3 steps. Simple, fast, and compatible with all major browsers:
+[https://wordpress.org/plugins/the-preloader/](https://wordpress.org/plugins/the-preloader/)
+
+[Extend Link Plugin](https://wordpress.org/plugins/extend-link/) - Link Options for WordPress Editor:
+[https://wordpress.org/plugins/extend-link/](https://wordpress.org/plugins/extend-link/)
 
 == Installation ==
 
-### Installation
+1. Download the plugin ZIP file.
+2. Log in to your WordPress admin dashboard.
+3. Go to Plugins > Add Plugin > Upload Plugin.
+4. Click "Choose File" and select the downloaded zip file.
+5. Click "Install Now".
+6. After installation completes, click "Activate Plugin".
 
-1. Upload 'video-popup' folder to the '/wp-content/plugins/' directory.
-2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. Now read [Explanation of Use](https://wp-plugins.in/VideoPopUp-Usage)
-
-[Live Demos](https://wp-plugins.in/VP-Live-Demos)
-
-Get the Premium Extension at a low price! [Get it](https://wp-plugins.in/Get-VP-Premium-Extension)
-
-[Support and Contact](https://wp-plugins.in/VP-Support-and-Contact)
+1. After activation the plugin, you will find "Video Popup" menu in your WordPress admin dashboard:
+	* **General Settings:** Control the default options for all video popups on your site, except for the Public On-Page Load.
+	* **Public On-Page Load:** Set up a video to automatically show as a popup on specific locations.
+	* **Shortcode Reference:** Explanation of shortcode features and attributes, with examples and their corresponding outputs.
+2. If you are using a caching plugin, please clear your cache once to ensure the new Video Popup modal and style load correctly.
+3. Start creating video popups. Read [how to create a popup](https://wp-time.com/video-popup-plugin-for-wordpress/#create-popup) and check out the [Live Demos](https://wp-time.com/video-popup-plugin-for-wordpress/#live-demo).
 
 == Frequently Asked Questions ==
 
-### FAQ
+= Plugin Reference =
 
-* [Explanation of Use](https://wp-plugins.in/VideoPopUp-Usage)
-* Get the Premium Extension at a low price! [Get it](https://wp-plugins.in/Get-VP-Premium-Extension)
-* [Support and Contact](https://wp-plugins.in/VP-Support-and-Contact)
+* [Plugin Reference](https://wp-time.com/video-popup-plugin-for-wordpress/)
+	* [Download and Installation](https://wp-time.com/video-popup-plugin-for-wordpress/#download-and-installation)
+	* [How to Create a Popup](https://wp-time.com/video-popup-plugin-for-wordpress/#create-popup)
+	* [Trigger Video Popup on a Link Click](https://wp-time.com/video-popup-plugin-for-wordpress/#trigger-vp)
+	* [Plugin FAQs](https://wp-time.com/video-popup-plugin-for-wordpress/#plugin-faq)
+	* [Support and Contact](https://wp-time.com/video-popup-plugin-for-wordpress/#contact)
+
+== Screenshots ==
+
+1. YouTube Video Popup.
+2. Vimeo Video Popup.
+3. MP4 (self-hosted video) Video Popup.
 
 == Changelog ==
 
-= 1.1.4 =
+= 2.0.3 =
 
-In this update, we've sanitized the output of Shortcode attributes.
+- Added playsInline support for MP4 videos to prevent forced fullscreen playback on mobile devices and improve the viewing experience.
+- Improved the settings structure.
 
-= 1.1.3 =
+Note: If you are using a caching plugin, please clear your cache once to ensure the update is applied correctly.
 
-With this update, all ads have been removed from the Settings page, and the Builder.
+= 2.0.2 =
 
-= 1.1.2 =
+Core improvements.
 
-1. A simple update that improves the design for the pop-up. Please clear all the cache files on your site, if you use a caching plugin such as "WP Super Cache". [Read more](https://wp-plugins.in/2W2eZxx).
+After updating, no action is required on your part. Enjoy!
 
-= 1.1.1 =
+= 2.0.1 =
 
-1. We fixed an issue in JavaScript related to the “On Page Load” feature.
+Fixed an issue that prevented MP4 and WebM videos from autoplaying in On Click popups. Autoplay now works properly even without muted sound for all supported video types (YouTube, Vimeo, MP4, and WebM) in On Click popups only. However, when using the Public On-Page Load feature, the video must be muted to ensure autoplay works due to browser autoplay policies.
 
-= 1.1.0 =
+Note: If you are using a caching plugin, please clear your cache once to ensure the update is applied correctly.
 
-1. In the version "1.1.0", we fixed an issue in the "On Page Load" feature.
+= 2.0.0 =
 
-Note: If you are use a caching plugin on your site, such as "WP Super Cache Plugin", please clear all the cache files (one time only) after updating the Video Popup plugin to the version "1.1.0". Read [how to clear the cache in your website](https://wp-plugins.in/2VL1ksf).
+Enjoy a **new experience** with a **modern** and **responsive** popup design, the **Powerful New On-Page Load** feature, improved performance, and more!
 
-= 1.0.9 =
+Version **2.0.0** is fully **jQuery-free** and built with clean, modern code for maximum speed and stability. Plus, a built-in **debug mode** makes it easy to detect **JavaScript** issues.
 
-1. In the version "1.0.9", we fixed an issue in the display options (for the popup video on page load).
+Version **2.0.0** is built with performance in mind, ensuring compatibility with modern web standards while maintaining lightweight and efficient operation.
 
-Note: If you are use a caching plugin on your site, such as "WP Super Cache Plugin", please clear all the cache files (one time only) after updating the Video Popup plugin to the version "1.0.9". Read [how to clear the cache in your website](https://wp-plugins.in/2VL1ksf).
+With version **2.0.0**, creating elegant and effective video popups has never been easier or more flexible!
 
-= 1.0.8 =
+[Explore 30+ Live Demos](https://wp-time.com/video-popup-plugin-for-wordpress/#live-demo)
 
-1. Removing the download button for MP4 Video.
-2. allow="autoplay" added for autoplay in Google Chrome (Autoplay currently works in Google Chrome browser, but maybe sometimes it will not work).
+**Is the usage method still the same?**
+Yes! The same builder and shortcode are still used and remain core to the plugin. We have completely redeveloped the plugin without changing the usage method.
 
-All of the above is supported for both Video Popup Builder and On Page Load feature. There are no new options, and all of the above will be applied automatically.
+**After updating to 2.0.0, will my previously created popups continue to work?**
+Yes! All your popups created with any version in your content will continue to work seamlessly without the need for any edits! But, if you previously used the old On-Page Load feature, it has been completely re-developed and renamed to "Public On-Page Load", so you will need to enable it and set it up if you wish to use it.
 
-= 1.0.7 =
+**Note after updating to 2.0.0:** If you are using a caching plugin, please clear your cache once to ensure the new Video Popup modal and style load correctly.
 
-1. Fixing an error in the language. You should update if you are using version 5.0 of WordPress.
+Enjoy!
 
-= 1.0.6 =
+= Earlier versions =
 
-1. Improve Javascript.
-2. Fixing this error: [plays two videos at the same time](https://wordpress.org/support/topic/v1-05-create-additional-wrapper-in-footer/).
-3. Remove "Disable Info" option. This feature was deprecated by YouTube. Please read this announcement: [https://developers.google.com/youtube/player_parameters#release_notes_08_23_2018](https://developers.google.com/youtube/player_parameters#release_notes_08_23_2018)
-4. The option of disable related videos has been changed by YouTube. Please read this announcement: [https://developers.google.com/youtube/player_parameters#release_notes_08_23_2018](https://developers.google.com/youtube/player_parameters#release_notes_08_23_2018)
-
-= 1.0.5 =
-
-1. Improving JavaScript for on page loading feature.
-2. Compatibility any caching plugin (such as WP Super Cache) with on page loading feature. Now on page loading feature is working with any WordPress caching plugin.
-3. Alignment options for on page loading feature. Now you can display Pop-up Video on page loading with the left or right video alignment. [Live Demo](https://wp-plugins.in/VP-On-Page-Load-Align) of Popup Video on page loading with the Alignment options.
-4. Mute option. A new option for the on page loading feature. Now you can mute the sound of video. This option for YouTube only.
-
-= 1.0.4 =
-
-In the version 1.0.4, we added the following:
-
-1. New closing button icon (X icon).
-2. Popup Video on Page Load! We added it with many features! Display Pop-up Video on page loading. Take a look at the [live demo](https://wp-plugins.in/VP-On-Page-Load) of Popup Video on page loading.
-3. Other general improvements.
-
-= 1.0.3 =
-
-In the version number "1.0.3" we changed everything! Visual builder, change width and height size, a new design, support for MP4 Videos & SoundCloud, support all YouTube features, and many other features:
-
-1. YouTube, Vimeo, SoundCloud, and MP4 video support.
-2. Visual Editor (Visual Builder) with Editor Style.
-3. Unlimited Popup’s.
-4. Flex Design (a new design).
-5. Responsive Style.
-6. Retina Ready.
-7. All the YouTube Options:
-	1. Disable: Related Videos, Controls (YouTube player), Info (video title), and video Annotations.
-	2. Display YouTube video image automatically.
-	3. Starting Time (playing the video at the time you specify).
-	4. Ending Time (turning off the video at the time you specify).
-8. Autoplay Support for YouTube, Vimeo, SoundCloud, and MP4 Video.
-9. Image Support for YouTube, Vimeo, SoundCloud, and MP4 Video.
-10. Customizing the Width and Height Size for YouTube, Vimeo, SoundCloud, and MP4 Video.
-11. Customizing the Color of Overlay for YouTube, Vimeo, SoundCloud, and MP4 Video.
-12. Shortcode Support with all the Attributes.
-13. General Settings.
-14. Shortcode Usage Page.
-15. Translation Ready.
-16. RTL and Arabic Language Support.
-17. Easy to Use.
-18. And More!
-
-[Live Demos](https://wp-plugins.in/VP-Live-Demos)
-
-[Explanation of Use](https://wp-plugins.in/VideoPopUp-Usage)
-
-[Support and Contact](https://wp-plugins.in/VP-Support-and-Contact)
-
-= 1.0.2 =
-
-1. Fixing problem in Fullscreen mode for YouTube and Vimeo.
-
-[Recommended Plugin](https://wordpress.org/plugins/extend-link/)
-
-= 1.0.1 =
-
-1. Fixing a problem in auto="" attribute.
-2. A new attribute n="1" to add rel nofollow to the video link.
-3. A new attribute p="1" to add the video link inside a paragraph.
-4. A new attribute rel="1" to disable YouTube related videos (premium).
-
-[Read about version 1.0.1](http://wp-plugins.in/2cmY9Vx)
-
-= 1.0.0 =
-
-* First version.
+[Changelog of Earlier Versions](https://wp-time.com/changelog-of-earlier-free-versions-video-popup-plugin/)
