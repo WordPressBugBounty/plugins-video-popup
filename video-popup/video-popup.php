@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Video PopUp
- * Version: 2.0.3
+ * Version: 2.0.4
  * Description: The ultimate Video Popup plugin for WordPress. Smart, flexible, and made for easy control. Create unlimited, elegant, and responsive popups for YouTube, Vimeo, MP4 & WebM videos on click or On-Page Load.
  * Author: Alobaidi
  * Author URI: https://wp-time.com/video-popup-plugin-for-wordpress/
@@ -27,7 +27,7 @@ if ( !defined('ABSPATH') ) {
 
 // Define plugin constants
 define('VIDEO_POPUP_PLUGIN_ID', 'video_popup');
-define('VIDEO_POPUP_PLUGIN_VERSION', '2.0.3');
+define('VIDEO_POPUP_PLUGIN_VERSION', '2.0.4');
 define('VIDEO_POPUP_PLUGIN_PATH', plugin_dir_path(__FILE__));
 define('VIDEO_POPUP_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('VIDEO_POPUP_PLUGIN_BASENAME', plugin_basename(__FILE__));

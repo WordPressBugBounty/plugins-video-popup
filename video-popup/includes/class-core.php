@@ -62,6 +62,7 @@ class Video_Popup_Core {
 
                 'class_utils'           => 'Video_Popup_Utils',
                 'class_admin'           => 'Video_Popup_Admin',
+                'class_get_started'     => 'Video_Popup_Get_Started',
                 'class_shortcode'       => 'Video_Popup_Shortcode',
                 'class_shortcode_page'  => 'Video_Popup_Shortcode_Reference_Page',
                 'class_output'          => 'Video_Popup_Output',
@@ -89,7 +90,7 @@ class Video_Popup_Core {
 
             $custom_links = array(
                 '<a style="font-weight:bold;" href="https://wp-time.com/video-popup-plugin-for-wordpress/" target="_blank">' . esc_html__('Plugin Reference', 'video-popup') . '</a>',
-                '<a style="font-weight:bold;color:#4f9915;" href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank">' . esc_html__('Get Premium Version', 'video-popup') . '</a>',
+                '<a style="font-weight:bold;color:#4f9915;" href="https://videopopup.net/?utm_source=plugin&utm_medium=rm_link&utm_campaign=plugins_page#get-premium" target="_blank">' . esc_html__('Get Premium Version', 'video-popup') . '</a>',
                 '<a style="font-weight:bold;color:#ce7825;" href="https://wordpress.org/plugins/the-preloader/" target="_blank">' . esc_html__('Preloader Plugin', 'video-popup') . '</a>'
             );
             
@@ -111,8 +112,9 @@ class Video_Popup_Core {
             
         if ($plugin == $plugin_file) {
             $plugin_id = $this->plugin_consts('plugin_id');
+            $builder_guide = '<a href="' . admin_url('admin.php?page=' . $plugin_id . '_builder') . '">' . esc_html__('Create a Popup', 'video-popup') . '</a>';
             $settings_link = '<a href="' . admin_url('admin.php?page=' . $plugin_id) . '">'.esc_html__('Settings', 'video-popup').'</a>';
-            $actions = array_merge(array($settings_link), $actions);
+            $actions = array_merge(array($builder_guide, $settings_link), $actions);
         }
 
         return $actions;
@@ -141,6 +143,7 @@ class Video_Popup_Core {
             if ( is_admin() ) {
                 $this->load_admin();
                 $this->load_onpageload();
+                $this->load_get_started();
                 $this->load_shortcode_page();
                 $this->load_tinymce();
             }
@@ -176,6 +179,21 @@ class Video_Popup_Core {
             $class = Video_Popup_Admin::get_instance();
             $class->run();
             add_filter('plugin_action_links', array($this, 'plugin_action_links_custom'), 10, 5);
+        }
+    }
+
+    /**
+     * Loads the get started and interface components
+     * Only loaded in admin context
+     */
+    private function load_get_started() {
+        $class_name = $this->plugin_consts('class_get_started');
+
+        if ( !class_exists($class_name) ) {
+            $class_file = $this->plugin_consts('plugin_path') . 'includes/class-get-started.php';
+            require_once $class_file;
+            $class = Video_Popup_Get_Started::get_instance();
+            $class->run();
         }
     }
     

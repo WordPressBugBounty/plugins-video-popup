@@ -1,7 +1,6 @@
 /**
  * Video Popup TinyMCE Integration
  * Adds custom button and dialog to WordPress classic editor for inserting video popups.
- * License: This script is exclusive to the Video Popup plugin for WordPress and must not be used separately or outside the plugin. Developed by Alobaidi.
  * 
  * @author   Alobaidi
  * @since    2.0.0
@@ -304,6 +303,15 @@
                             items: [
                                 {
                                     type: 'button',
+                                    text: vpTinyMceText('get_bldr_guide_button'),
+                                    tooltip: vpTinyMceText('get_bldr_guide_button_tooltip'),
+                                    classes: 'vp-general-style-btn vp-bldr-guide-p-btn',
+                                    onclick: function() {
+                                        window.open(vpTinyMceText('bldr_guide_url'), '_blank');
+                                    }
+                                },
+                                {
+                                    type: 'button',
                                     text: vpTinyMceText('general_settings_button'),
                                     tooltip: vpTinyMceText('general_settings_button_tooltip'),
                                     classes: 'vp-general-style-btn vp-general-s-btn',
@@ -344,7 +352,7 @@
                                     tooltip: vpTinyMceText('get_premium_button_tooltip'),
                                     classes: 'vp-general-style-btn vp-get-premium-btn',
                                     onclick: function() {
-                                        window.open('https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version', '_blank');
+                                        window.open('https://videopopup.net/?utm_source=plugin&utm_medium=button&utm_campaign=tmce_builder#get-premium', '_blank');
                                     }
                                 }
                             ]
@@ -387,10 +395,10 @@
                             } else if (/vimeo\.com/i.test(data.url)) {
                                 videoType = 'vp-vim-type';
                                 isVimeo = true;
-                            } else if (/\.mp4$/i.test(data.url)) {
+                            } else if (/\.mp4(\?.*)?$/i.test(data.url)) {
                                 videoType = 'vp-mp4-type';
                                 isMP4 = true;
-                            } else if (/\.webm$/i.test(data.url)) {
+                            } else if (/\.webm(\?.*)?$/i.test(data.url)) {
                                 videoType = 'vp-webm-type';
                                 isWebM = true;
                             }

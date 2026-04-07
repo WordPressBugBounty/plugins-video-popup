@@ -1,7 +1,6 @@
 /**
  * Handles AJAX-based on-page-load functionality for Video Popup
  * Triggers automatic popup display based on server-side conditions
- * License: This script is exclusive to the Video Popup plugin for WordPress and must not be used separately or outside the plugin. Developed by Alobaidi.
  * 
  * @author   Alobaidi
  * @since    2.0.0

@@ -3,7 +3,7 @@ Contributors: Alobaidi
 Tags: video popup, youtube lightbox, popup, video lightbox, lightbox
 Requires at least: 5.8
 Tested up to: 6.9
-Stable tag: 2.0.3
+Stable tag: 2.0.4
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -39,7 +39,10 @@ And more!
 
 With the Public On-Page Load, you can set up a video to automatically show as a popup on multiple locations at once, like all posts or all pages. This feature is perfect for video marketing and product promotion, ensuring your message instantly reaches every visitor without any clicks. Capture attention, boost engagement!
 
-[Live Demo](https://wp-time.com/public-on-page-load-video-popup-live-demo/)
+Live Demos:
+
+* [Live Demo](https://wp-time.com/public-on-page-load-video-popup-live-demo/) - Basic design.
+* [Live Demo](https://wp-time.com/on-page-load-video-popup-delay-before-show-option-live-demo/) - Minimized design.
 
 ### Get Started
 
@@ -88,11 +91,19 @@ Enjoy!
 
 == Screenshots ==
 
-1. YouTube Video Popup.
-2. Vimeo Video Popup.
-3. MP4 (self-hosted video) Video Popup.
+1. Video Popup.
+2. Video Popup Builder.
+3. Plugin Menu.
 
 == Changelog ==
+
+= 2.0.4 =
+
+- Fixed: Direct video URLs with query parameters now work correctly.
+- Fixed: Compatibility issue with Google Analytics consent mode.
+- General improvements.
+
+Note: If you are using a caching plugin, please clear your cache once to ensure the update is applied correctly.
 
 = 2.0.3 =
 

@@ -1,10 +1,9 @@
 /**
  * Pure JavaScript Video Popup Library - Developed by Alobaidi.
  * Core library that manages the popup display, video embedding, and all related functionality
- * License: This library is exclusive to the Video Popup plugin for WordPress and must not be used separately or outside the plugin. Developed by Alobaidi.
  * 
  * @author   Alobaidi
- * @version  2.0.3
+ * @version  2.0.4
  */
 
 
@@ -227,7 +226,7 @@ class VideoPopup {
      * @return {boolean} True if direct video file
      */
     isDirectVideo(url) {
-        return /\.(mp4|webm)$/i.test(url);
+        return /\.(mp4|webm)(\?.*)?$/i.test(url);
     }
 
     /**
@@ -236,10 +235,10 @@ class VideoPopup {
      * @return {string|null} MIME type or null
      */
     getDirectVideoMimeType(url) {
-        if (/\.mp4$/i.test(url)) {
+        if (/\.mp4(\?.*)?$/i.test(url)) {
             return 'video/mp4';
         }
-        else if (/\.webm$/i.test(url)) {
+        else if (/\.webm(\?.*)?$/i.test(url)) {
             return 'video/webm';
         }
         else {

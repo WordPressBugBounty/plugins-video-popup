@@ -108,7 +108,7 @@ class Video_Popup_Utils {
      * @return bool True if direct video file
      */
     public function is_direct_video($url){
-        return preg_match('/\.(mp4|webm)$/i', trim($url));
+        return preg_match('/\.(mp4|webm)(\?.*)?$/i', trim($url));
     }
 
     /**

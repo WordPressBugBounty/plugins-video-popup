@@ -80,8 +80,8 @@ class Video_Popup_OnPageLoad {
      */
     public function run() {
         $this->key_suffix = $this->key_suffix_();
-        add_action('admin_enqueue_scripts', array($this, 'enqueue_admin_script'));
         add_action('admin_menu', array($this, 'add_admin_submenu'));
+        add_action('admin_enqueue_scripts', array($this, 'enqueue_admin_script'));
         add_action('admin_init', array($this, 'register_settings'));
         add_action('admin_init', array($this, 'settings_section'));
         add_action('admin_init', array($this, 'settings_fields'));
@@ -138,7 +138,7 @@ class Video_Popup_OnPageLoad {
 
     /**
      * Adds submenu page for on-page-load settings
-     * Creates dedicated admin page for popup configuration
+     * Creates dedicated admin page for on-page-load video popup configuration
      */
     public function add_admin_submenu() {
         add_submenu_page(
@@ -620,7 +620,7 @@ class Video_Popup_OnPageLoad {
                 printf(
                     // translators: %1$s is opening link tag, %2$s is closing link tag
                     esc_html__('With the %1$sPremium Version%2$s, you can hide the player controls on YouTube, Vimeo, and supported direct video formats.', 'video-popup'),
-                    '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank">',
+                    '<a href="https://videopopup.net/?utm_source=plugin&utm_medium=link&utm_campaign=opl_settings_page#get-premium" target="_blank">',
                     '</a>'
                 );
             ?>
@@ -635,7 +635,7 @@ class Video_Popup_OnPageLoad {
                 printf(
                     // translators: %1$s is opening link tag, %2$s is closing link tag
                     esc_html__('With the %1$sPremium Version%2$s, you can limit related videos to the same channel instead of showing all YouTube videos. This option is for YouTube only.', 'video-popup'),
-                    '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank">',
+                    '<a href="https://videopopup.net/?utm_source=plugin&utm_medium=link&utm_campaign=opl_settings_page#get-premium" target="_blank">',
                     '</a>'
                 );
             ?><span class="vp-tooltip" data-vp-tooltip="<?php esc_attr_e('Note: YouTube no longer allows completely hiding related videos since September 2018, but this option helps keep viewers within the same channel content.', 'video-popup'); ?>">?</span>
@@ -650,7 +650,7 @@ class Video_Popup_OnPageLoad {
                 printf(
                     // translators: %1$s is opening link tag, %2$s is closing link tag
                     esc_html__('With the %1$sPremium Version%2$s, you can start a YouTube or Vimeo video at a specific time. Supported formats: Seconds (e.g., 90), Time format (MM:SS, e.g., 01:30 or HH:MM:SS, e.g., 01:15:45), Duration format (e.g., 1m, 1m30s, 1h, 1h30s, 1h40m, or 1h15m45s). This option is for YouTube and Vimeo only.', 'video-popup'),
-                    '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank">',
+                    '<a href="https://videopopup.net/?utm_source=plugin&utm_medium=link&utm_campaign=opl_settings_page#get-premium" target="_blank">',
                     '</a>'
                 );
             ?>
@@ -665,7 +665,7 @@ class Video_Popup_OnPageLoad {
                 printf(
                     // translators: %1$s is opening link tag, %2$s is closing link tag
                     esc_html__('With the %1$sPremium Version%2$s, you can stop a YouTube video at a specific time. Supported formats: Seconds (e.g., 300), Time format (MM:SS, e.g., 05:00 or HH:MM:SS, e.g., 02:30:00), Duration format (e.g., 5m, 5m20s, 2h, 2h15s, 2h30m, or 2h30m10s). This option is for YouTube only.', 'video-popup'),
-                    '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank">',
+                    '<a href="https://videopopup.net/?utm_source=plugin&utm_medium=link&utm_campaign=opl_settings_page#get-premium" target="_blank">',
                     '</a>'
                 );
             ?>
@@ -702,7 +702,7 @@ class Video_Popup_OnPageLoad {
                 printf(
                     // translators: %1$s is opening link tag, %2$s is closing link tag
                     esc_html__('With the %1$sPremium Version%2$s, you can set a custom popup width with support for pixels (px), percentages (%%), and viewport width (vw).', 'video-popup'),
-                    '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank">',
+                    '<a href="https://videopopup.net/?utm_source=plugin&utm_medium=link&utm_campaign=opl_settings_page#get-premium" target="_blank">',
                     '</a>'
                 );
             ?>
@@ -717,7 +717,7 @@ class Video_Popup_OnPageLoad {
                 printf(
                     // translators: %1$s is opening link tag, %2$s is closing link tag
                     esc_html__('With the %1$sPremium Version%2$s, you can set a custom popup height with support for pixels (px), percentages (%%), and viewport height (vh). You can also apply a 16:9 aspect ratio by entering "16:9" for height and a pixel value for width.', 'video-popup'),
-                    '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank">',
+                    '<a href="https://videopopup.net/?utm_source=plugin&utm_medium=link&utm_campaign=opl_settings_page#get-premium" target="_blank">',
                     '</a>'
                 );
             ?>
@@ -732,7 +732,7 @@ class Video_Popup_OnPageLoad {
                 printf(
                     // translators: %1$s is opening link tag, %2$s is closing link tag
                     esc_html__('With the %1$sPremium Version%2$s, you can set a custom overlay color using HEX format (e.g., #FFFFFF for white).', 'video-popup'),
-                    '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank">',
+                    '<a href="https://videopopup.net/?utm_source=plugin&utm_medium=link&utm_campaign=opl_settings_page#get-premium" target="_blank">',
                     '</a>'
                 );
             ?>
@@ -747,7 +747,7 @@ class Video_Popup_OnPageLoad {
                 printf(
                     // translators: %1$s is opening link tag, %2$s is closing link tag
                     esc_html__('With the %1$sPremium Version%2$s, you can adjust overlay transparency from 0 (fully transparent) to 100 (completely opaque). You can even create a blur backdrop effect by combining low opacity (e.g., 20) with black (#000000) or white (#FFFFFF) overlay color.', 'video-popup'),
-                    '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank">',
+                    '<a href="https://videopopup.net/?utm_source=plugin&utm_medium=link&utm_campaign=opl_settings_page#get-premium" target="_blank">',
                     '</a>'
                 );
             ?>
@@ -767,9 +767,9 @@ class Video_Popup_OnPageLoad {
                 printf(
                     // translators: %1$s and %3$s is opening link tag, %2$s and %4$s is closing link tag, and %5$s is <br> tag.
                     esc_html__('With the %1$sPremium Version%2$s, you can display a video popup in a small, elegant design at the bottom of the page, on either the left or right side.%5$sYou can see a %3$slive demo%4$s of the minimized design.', 'video-popup'),
-                    '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank">',
+                    '<a href="https://videopopup.net/?utm_source=plugin&utm_medium=link&utm_campaign=opl_settings_page#get-premium" target="_blank">',
                     '</a>',
-                    '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#minimize-demo" target="_blank">',
+                    '<a href="https://wp-time.com/on-page-load-video-popup-delay-before-show-option-live-demo/" target="_blank">',
                     '</a>',
                     '<br>'
                 );
@@ -807,9 +807,9 @@ class Video_Popup_OnPageLoad {
                 printf(
                     // translators: %1$s and %3$s is opening link tag, %2$s and %4$s is closing link tag
                     esc_html__('With the %1$sPremium Version%2$s, you can set a delay in seconds before showing the video popup. You can see a live demo %3$shere%4$s to get the idea.', 'video-popup'),
-                    '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank">',
+                    '<a href="https://videopopup.net/?utm_source=plugin&utm_medium=link&utm_campaign=opl_settings_page#get-premium" target="_blank">',
                     '</a>',
-                    '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#dbs-demo" target="_blank">',
+                    '<a href="https://wp-time.com/on-page-load-video-popup-delay-before-show-option-live-demo/" target="_blank">',
                     '</a>'
                 );
             ?>
@@ -824,7 +824,7 @@ class Video_Popup_OnPageLoad {
                 printf(
                     // translators: %1$s is opening link tag, %2$s is closing link tag
                     esc_html__('With the %1$sPremium Version%2$s, you can hide the video popup on specific screen widths, such as "480" for mobile devices.', 'video-popup'),
-                    '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank">',
+                    '<a href="https://videopopup.net/?utm_source=plugin&utm_medium=link&utm_campaign=opl_settings_page#get-premium" target="_blank">',
                     '</a>'
                 );
             ?>
@@ -839,7 +839,7 @@ class Video_Popup_OnPageLoad {
                 printf(
                     // translators: %1$s is opening link tag, %2$s is closing link tag
                     esc_html__('With the %1$sPremium Version%2$s, you can set a start date to begin displaying the video popup on a specific date, an end date to stop it on a specific date, or both to show it only between selected dates.', 'video-popup'),
-                    '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank">',
+                    '<a href="https://videopopup.net/?utm_source=plugin&utm_medium=link&utm_campaign=opl_settings_page#get-premium" target="_blank">',
                     '</a>'
                 );
             ?>
@@ -882,7 +882,7 @@ class Video_Popup_OnPageLoad {
                 printf(
                     // translators: %1$s is opening link tag, %2$s is closing link tag
                     esc_html__('With the %1$sPremium Version%2$s, you can choose which devices the video popup should appear on. This allows you to target specific platforms or limit the video popup to mobile users only.', 'video-popup'),
-                    '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank">',
+                    '<a href="https://videopopup.net/?utm_source=plugin&utm_medium=link&utm_campaign=opl_settings_page#get-premium" target="_blank">',
                     '</a>'
                 );
             ?><span class="vp-tooltip" data-vp-tooltip="<?php esc_attr_e('For the On-Page Load Shortcode (premium only), use the dtr="" attribute to target a device or platform. You will find a detailed explanation in: "Shortcode Reference" page > "On-Page Load Shortcode" section > "Attributes" table > dtr attribute.', 'video-popup'); ?>">?</span>
@@ -986,7 +986,7 @@ class Video_Popup_OnPageLoad {
                 printf(
                     // translators: %1$s is opening link tag, %2$s is closing link tag
                     esc_html__('With the %1$sPremium Version%2$s, you can show the video popup on multiple specific content by their IDs (e.g., 329,80,6517), regardless of the display location settings above. Unlike the free option "Always show on this ID" which supports only a single post or page ID, the Premium version supports IDs of any content type such as posts, pages, WooCommerce products, and custom post types, with unlimited IDs.', 'video-popup'),
-                    '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank">',
+                    '<a href="https://videopopup.net/?utm_source=plugin&utm_medium=link&utm_campaign=opl_settings_page#get-premium" target="_blank">',
                     '</a>'
                 );
             ?>
@@ -1001,7 +1001,7 @@ class Video_Popup_OnPageLoad {
                 printf(
                     // translators: %1$s is opening link tag, %2$s is closing link tag
                     esc_html__('With the %1$sPremium Version%2$s, you can hide the video popup on multiple specific content by their IDs (e.g., 912,8301,54), regardless of the display location settings above. It supports IDs of any content type such as posts, pages, products, and custom post types, with unlimited IDs supported.', 'video-popup'),
-                    '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank">',
+                    '<a href="https://videopopup.net/?utm_source=plugin&utm_medium=link&utm_campaign=opl_settings_page#get-premium" target="_blank">',
                     '</a>'
                 );
             ?>
@@ -1462,7 +1462,7 @@ class Video_Popup_OnPageLoad {
             );
         }
         ?>
-            <div class="wrap vp-settings-form">
+            <div class="wrap vp-settings-form vp-opl-settings-form">
 
                 <div class="vp-settings-header">
                     <h1><?php esc_html_e('Public On-Page Load Settings', 'video-popup'); ?></h1>
@@ -1474,7 +1474,7 @@ class Video_Popup_OnPageLoad {
                             printf(
                                 // translators: %1$s is opening link tag, %2$s is closing link tag
                                 esc_html__('Set up a video to automatically show as a popup on specific locations. See a %1$slive demo%2$s.', 'video-popup'),
-                                '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#live-demo" target="_blank">',
+                                '<a href="https://wp-time.com/public-on-page-load-video-popup-live-demo/" target="_blank">',
                                 '</a>'
                             );
                         ?>
@@ -1504,7 +1504,55 @@ class Video_Popup_OnPageLoad {
 
                     <div id="vp-submit" class="vp-form-btns">
                         <div><input type="submit" name="submit" id="submit" class="button button-primary" value="<?php echo esc_attr__('Save Changes', 'video-popup'); ?>"></div>
-                        <div class="vp-premium-btn"><a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank" class="button secondary-button vp-get-premium"><?php esc_html_e('Get Premium Version', 'video-popup'); ?></a></div>
+                    </div>
+
+                    <div class="vp-premium-cta">
+                        <div class="vp-premium-content">
+                            <div class="vp-premium-icon">
+                                <svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="vpLogoGrad" x1="0" y1="0.5" x2="1" y2="0.5">
+                                            <stop offset="0%" stop-color="#1279f8"></stop>
+                                            <stop offset="100%" stop-color="#10b5cb"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="vpLogoDark" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#0a1f5c"></stop>
+                                            <stop offset="100%" stop-color="#061240"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="45" cy="45" r="38" fill="#5aaeff" opacity="0.28"></circle>
+                                    <circle cx="45" cy="45" r="32" fill="url(#vpLogoGrad)"></circle>
+                                    <circle cx="45" cy="45" r="24" fill="url(#vpLogoDark)"></circle>
+                                    <g transform="translate(45,45) scale(0.82) translate(-47,-45)">
+                                        <path d="M 38,33 C 36,31.5 36,32.5 36,34.5 L 36,55.5 C 36,57.5 36,58.5 38,57 L 58.5,47.5 C 61,46 61,44 58.5,42.5 Z" fill="#FFFFFF"></path>
+                                        <path d="M 38,33 C 36,31.5 36,32.5 36,34.5 L 36,55.5 C 36,57.5 36,58.5 38,57 L 58.5,47.5 C 61,46 61,44 58.5,42.5 Z" fill="url(#vpLogoDark)" opacity="0.05"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="vp-premium-text">
+                                <h3><?php esc_html_e('Get More Control. Get Premium.', 'video-popup'); ?></h3>
+                                <p><?php esc_html_e('Make your Video Popups stand out with many features in the Premium version.', 'video-popup'); ?><br>
+                                <span class="vp-premium-highlight"><?php esc_html_e('After upgrading to Premium, all your popups created with the free version will continue to work seamlessly without the need for edits! Upgrade with confidence.', 'video-popup'); ?></span></p>
+                                <div class="vp-premium-features">
+                                    <span><?php esc_html_e('Download Instantly', 'video-popup'); ?></span>
+                                    <span><?php esc_html_e('One-Time Payment', 'video-popup'); ?></span>
+                                    <span><?php esc_html_e('PayPal Accepted', 'video-popup'); ?></span>
+                                    <span><?php esc_html_e('14-Day Money Back Guarantee', 'video-popup'); ?></span>
+                                </div>
+                            </div>
+                            <div class="vp-premium-actions">
+                                <a href="https://videopopup.net/?utm_source=plugin&utm_medium=cta&utm_campaign=opl_settings_page#get-premium" target="_blank" class="vp-btn-primary">
+                                    <?php esc_html_e('Upgrade Now', 'video-popup'); ?>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </a>
+                                <a href="https://wp-time.com/video-popup-plugin-for-wordpress/#live-demo" target="_blank" class="vp-btn-secondary">
+                                    <?php esc_html_e('30+ Live Demos', 'video-popup'); ?>
+                                </a>
+                                <a href="https://videopopup.net/?utm_source=plugin&utm_medium=cta&utm_campaign=opl_settings_page#faq" target="_blank" class="vp-btn-secondary">
+                                    <?php esc_html_e('FAQ', 'video-popup'); ?>
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="vp-settings-section vp-faq-section">
@@ -1551,7 +1599,7 @@ class Video_Popup_OnPageLoad {
                             printf(
                                 // translators: %1$s is opening link tag, %2$s is closing link tag
                                 esc_html__('Finally, we have provided these questions based on what you might encounter while using our plugin. If you have any questions, please feel free to visit the %1$splugin reference page%2$s and contact us.', 'video-popup'),
-                                '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#support-and-contact" target="_blank">',
+                                '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#contact" target="_blank">',
                                 '</a>'
                             );
                         ?>

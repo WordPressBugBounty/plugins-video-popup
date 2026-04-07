@@ -144,6 +144,7 @@ class Video_Popup_TinyMCE {
      */
     public function get_tinymce_texts() {
         $general_settings_url = admin_url('admin.php?page=' . $this->get_const('plugin_id'));
+        $builder_guide_page_url = admin_url('admin.php?page=' . $this->get_const('plugin_id') . '_builder');
         $onpage_load_settings_url = admin_url('admin.php?page=' . $this->get_const('plugin_id') . '_onpage_load');
         $shortcode_usage_page_url = admin_url('admin.php?page=' . $this->get_const('plugin_id') . '_shortcode');
 
@@ -232,7 +233,7 @@ class Video_Popup_TinyMCE {
             'close_wrap_note_label' => __('Note: The "Disable Outside Click Close" option is enabled here by default because it was enabled in the general settings. You can disable it here to override it for this video popup.', 'video-popup'),
 
             'rel_nofollow_label' => __('Rel Nofollow', 'video-popup'),
-            'rel_nofollow_tooltip' => __('Adds rel="nofollow" attribute to prevent search engines from following this link. Useful for SEO optimization.', 'video-popup'),
+            'rel_nofollow_tooltip' => __('Adds rel="nofollow" attribute to prevent search engines from following this link.', 'video-popup'),
 
             'error_youtube_only_thumbnail' => __('Display YouTube Video Preview Image option are available for YouTube videos only.', 'video-popup'),
 
@@ -250,14 +251,18 @@ class Video_Popup_TinyMCE {
             'shortcode_usage_button' => __('Shortcode Reference', 'video-popup'),
             'shortcode_usage_button_tooltip' => __('Shortcode attributes and usage guide.', 'video-popup'),
 
-            'get_demo_button' => __('Live Demos', 'video-popup'),
+            'get_demo_button' => __('30+ Live Demos', 'video-popup'),
             'get_demo_button_tooltip' => __('Explore 30+ live demos, including the minimized design and On-Page Load demos.', 'video-popup'),
 
+            'get_bldr_guide_button' => __('Builder Guide', 'video-popup'),
+            'get_bldr_guide_button_tooltip' => __('Learn how to create video popups on your site. Follow simple steps to get started.', 'video-popup'),
+
             'get_premium_button' => __('Get Premium Version', 'video-popup'),
-            'get_premium_button_tooltip' => __('Make your Video Popups stand out, branded, and elegant with the Premium version! Get advanced controls, customize size and colors, minimized design, and more!', 'video-popup'),
+            'get_premium_button_tooltip' => __('After upgrading to Premium, all your popups created with the free version will continue to work seamlessly without the need for edits! Upgrade with confidence.', 'video-popup'),
 
             'gs_settings_url' => $general_settings_url,
             'opl_settings_url' => $onpage_load_settings_url,
+            'bldr_guide_url' => $builder_guide_page_url,
             'scu_page_url' => $shortcode_usage_page_url
         );
     }

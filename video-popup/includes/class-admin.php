@@ -391,7 +391,7 @@ class Video_Popup_Admin {
                     printf(
                         // translators: %1$s is opening link tag, %2$s is closing link tag
                         esc_html__('With the %1$sPremium Version%2$s, you can set a custom popup width with support for pixels (px), percentages (%%), and viewport width (vw).', 'video-popup'),
-                        '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank">',
+                        '<a href="https://videopopup.net/?utm_source=plugin&utm_medium=link&utm_campaign=general_settings_page#get-premium" target="_blank">',
                         '</a>'
                     );
                 ?>
@@ -406,7 +406,7 @@ class Video_Popup_Admin {
                     printf(
                         // translators: %1$s is opening link tag, %2$s is closing link tag
                         esc_html__('With the %1$sPremium Version%2$s, you can set a custom popup height with support for pixels (px), percentages (%%), and viewport height (vh). You can also apply a 16:9 aspect ratio by entering "16:9" for height and a pixel value for width.', 'video-popup'),
-                        '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank">',
+                        '<a href="https://videopopup.net/?utm_source=plugin&utm_medium=link&utm_campaign=general_settings_page#get-premium" target="_blank">',
                         '</a>'
                     );
                 ?>
@@ -421,7 +421,7 @@ class Video_Popup_Admin {
                     printf(
                         // translators: %1$s is opening link tag, %2$s is closing link tag
                         esc_html__('With the %1$sPremium Version%2$s, you can set a custom overlay color using HEX format (e.g., #FFFFFF for white).', 'video-popup'),
-                        '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank">',
+                        '<a href="https://videopopup.net/?utm_source=plugin&utm_medium=link&utm_campaign=general_settings_page#get-premium" target="_blank">',
                         '</a>'
                     );
                 ?>
@@ -436,7 +436,7 @@ class Video_Popup_Admin {
                     printf(
                         // translators: %1$s is opening link tag, %2$s is closing link tag
                         esc_html__('With the %1$sPremium Version%2$s, you can adjust overlay transparency from 0 (fully transparent) to 100 (completely opaque). You can even create a blur backdrop effect by combining low opacity (e.g., 20) with black (#000000) or white (#FFFFFF) overlay color.', 'video-popup'),
-                        '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank">',
+                        '<a href="https://videopopup.net/?utm_source=plugin&utm_medium=link&utm_campaign=general_settings_page#get-premium" target="_blank">',
                         '</a>'
                     );
                 ?>
@@ -451,7 +451,7 @@ class Video_Popup_Admin {
                     printf(
                         // translators: %1$s is opening link tag, %2$s is closing link tag
                         esc_html__('With the %1$sPremium Version%2$s, you can automatically apply autoplay and mute to all existing and future video popups at once from a single flexible option, ensuring consistent behavior without editing each popup individually, and if you disable it later, all video popups will return to how they were before. Flexibility, simplicity, and time-saving!', 'video-popup'),
-                        '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank">',
+                        '<a href="https://videopopup.net/?utm_source=plugin&utm_medium=link&utm_campaign=general_settings_page#get-premium" target="_blank">',
                         '</a>'
                     );
                 ?>
@@ -585,7 +585,58 @@ class Video_Popup_Admin {
             );
         }
         ?>
-            <div class="wrap vp-settings-form">
+            <div class="wrap vp-settings-form vp-general-settings-form">
+                <div class="vp-premium-cta">
+                        <div class="vp-premium-content">
+                            <div class="vp-premium-icon">
+                                <svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="vpLogoGrad" x1="0" y1="0.5" x2="1" y2="0.5">
+                                            <stop offset="0%" stop-color="#1279f8"></stop>
+                                            <stop offset="100%" stop-color="#10b5cb"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="vpLogoDark" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#0a1f5c"></stop>
+                                            <stop offset="100%" stop-color="#061240"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="45" cy="45" r="38" fill="#5aaeff" opacity="0.28"></circle>
+                                    <circle cx="45" cy="45" r="32" fill="url(#vpLogoGrad)"></circle>
+                                    <circle cx="45" cy="45" r="24" fill="url(#vpLogoDark)"></circle>
+                                    <g transform="translate(45,45) scale(0.82) translate(-47,-45)">
+                                        <path d="M 38,33 C 36,31.5 36,32.5 36,34.5 L 36,55.5 C 36,57.5 36,58.5 38,57 L 58.5,47.5 C 61,46 61,44 58.5,42.5 Z" fill="#FFFFFF"></path>
+                                        <path d="M 38,33 C 36,31.5 36,32.5 36,34.5 L 36,55.5 C 36,57.5 36,58.5 38,57 L 58.5,47.5 C 61,46 61,44 58.5,42.5 Z" fill="url(#vpLogoDark)" opacity="0.05"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="vp-premium-text">
+                                <h3><?php esc_html_e('Get More Control. Get Premium.', 'video-popup'); ?></h3>
+                                <p><?php esc_html_e('Make your Video Popups stand out with many features in the Premium version.', 'video-popup'); ?><br>
+                                <span class="vp-premium-highlight"><?php esc_html_e('After upgrading to Premium, all your popups created with the free version will continue to work seamlessly without the need for edits! Upgrade with confidence.', 'video-popup'); ?></span></p>
+                                <div class="vp-premium-features">
+                                    <span><?php esc_html_e('Download Instantly', 'video-popup'); ?></span>
+                                    <span><?php esc_html_e('One-Time Payment', 'video-popup'); ?></span>
+                                    <span><?php esc_html_e('PayPal Accepted', 'video-popup'); ?></span>
+                                    <span><?php esc_html_e('14-Day Money Back Guarantee', 'video-popup'); ?></span>
+                                </div>
+                            </div>
+                            <div class="vp-premium-actions">
+                                <a href="https://videopopup.net/?utm_source=plugin&utm_medium=cta&utm_campaign=general_settings_page#get-premium" target="_blank" class="vp-btn-primary">
+                                    <?php esc_html_e('Upgrade Now', 'video-popup'); ?>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </a>
+                                <a href="https://wp-time.com/video-popup-plugin-for-wordpress/#live-demo" target="_blank" class="vp-btn-secondary">
+                                    <?php esc_html_e('30+ Live Demos', 'video-popup'); ?>
+                                </a>
+                                <a href="https://videopopup.net/?utm_source=plugin&utm_medium=cta&utm_campaign=general_settings_page#faq" target="_blank" class="vp-btn-secondary">
+                                    <?php esc_html_e('FAQ', 'video-popup'); ?>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="wrap vp-settings-form vp-general-settings-form">
 
                 <div class="vp-settings-header">
                     <h1><?php esc_html_e('General Settings', 'video-popup'); ?></h1>
@@ -621,7 +672,7 @@ class Video_Popup_Admin {
 
                     <div id="vp-submit" class="vp-form-btns">
                         <div><input type="submit" name="submit" id="submit" class="button button-primary" value="<?php echo esc_attr__('Save Changes', 'video-popup'); ?>"></div>
-                        <div class="vp-premium-btn"><a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank" class="button secondary-button vp-get-premium"><?php esc_html_e('Get Premium Version', 'video-popup'); ?></a></div>
+                        <div class="vp-premium-btn"><a href="https://videopopup.net/?utm_source=plugin&utm_medium=button&utm_campaign=general_settings_page#get-premium" target="_blank" class="button secondary-button vp-get-premium"><?php esc_html_e('Get Premium Version', 'video-popup'); ?></a></div>
                     </div>
 
                 </form>

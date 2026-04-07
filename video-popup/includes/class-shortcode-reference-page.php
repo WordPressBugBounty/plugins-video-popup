@@ -125,9 +125,9 @@ class Video_Popup_Shortcode_Reference_Page {
         ?>
         <div class="wrap vp-shortcode-page">
 
-            <h1><?php esc_html_e('Video Popup Shortcode Reference', 'video-popup'); ?></h1>
+            <h1><?php esc_html_e('Shortcode Reference', 'video-popup'); ?></h1>
 
-            <p style="padding: 0; font-size: 18px; margin: 30px 0;">
+            <p style="padding: 0; font-size: 18px; margin: 0 0 30px 0;">
                 <?php
                     printf(
                         // translators: %1$s is opening link tag, %2$s is closing link tag
@@ -137,6 +137,57 @@ class Video_Popup_Shortcode_Reference_Page {
                     );
                 ?>
             </p>
+
+            <div class="vp-section">
+                <div class="vp-premium-cta">
+                        <div class="vp-premium-content">
+                            <div class="vp-premium-icon">
+                                <svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="vpLogoGrad" x1="0" y1="0.5" x2="1" y2="0.5">
+                                            <stop offset="0%" stop-color="#1279f8"></stop>
+                                            <stop offset="100%" stop-color="#10b5cb"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="vpLogoDark" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#0a1f5c"></stop>
+                                            <stop offset="100%" stop-color="#061240"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="45" cy="45" r="38" fill="#5aaeff" opacity="0.28"></circle>
+                                    <circle cx="45" cy="45" r="32" fill="url(#vpLogoGrad)"></circle>
+                                    <circle cx="45" cy="45" r="24" fill="url(#vpLogoDark)"></circle>
+                                    <g transform="translate(45,45) scale(0.82) translate(-47,-45)">
+                                        <path d="M 38,33 C 36,31.5 36,32.5 36,34.5 L 36,55.5 C 36,57.5 36,58.5 38,57 L 58.5,47.5 C 61,46 61,44 58.5,42.5 Z" fill="#FFFFFF"></path>
+                                        <path d="M 38,33 C 36,31.5 36,32.5 36,34.5 L 36,55.5 C 36,57.5 36,58.5 38,57 L 58.5,47.5 C 61,46 61,44 58.5,42.5 Z" fill="url(#vpLogoDark)" opacity="0.05"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="vp-premium-text">
+                                <h3><?php esc_html_e('Get More Control. Get Premium.', 'video-popup'); ?></h3>
+                                <p><?php esc_html_e('Make your Video Popups stand out with many features in the Premium version.', 'video-popup'); ?><br>
+                                <span class="vp-premium-highlight"><?php esc_html_e('After upgrading to Premium, all your popups created with the free version will continue to work seamlessly without the need for edits! Upgrade with confidence.', 'video-popup'); ?></span></p>
+                                <div class="vp-premium-features">
+                                    <span><?php esc_html_e('Download Instantly', 'video-popup'); ?></span>
+                                    <span><?php esc_html_e('One-Time Payment', 'video-popup'); ?></span>
+                                    <span><?php esc_html_e('PayPal Accepted', 'video-popup'); ?></span>
+                                    <span><?php esc_html_e('14-Day Money Back Guarantee', 'video-popup'); ?></span>
+                                </div>
+                            </div>
+                            <div class="vp-premium-actions">
+                                <a href="https://videopopup.net/?utm_source=plugin&utm_medium=cta&utm_campaign=shortcode_rf_page#get-premium" target="_blank" class="vp-btn-primary">
+                                    <?php esc_html_e('Upgrade Now', 'video-popup'); ?>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </a>
+                                <a href="https://wp-time.com/video-popup-plugin-for-wordpress/#live-demo" target="_blank" class="vp-btn-secondary">
+                                    <?php esc_html_e('30+ Live Demos', 'video-popup'); ?>
+                                </a>
+                                <a href="https://videopopup.net/?utm_source=plugin&utm_medium=cta&utm_campaign=shortcode_rf_page#faq" target="_blank" class="vp-btn-secondary">
+                                    <?php esc_html_e('FAQ', 'video-popup'); ?>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
 
             <!-- Supported Video Sources -->
             <div class="vp-section">
@@ -305,7 +356,7 @@ class Video_Popup_Shortcode_Reference_Page {
                             </tr>
                             <tr>
                                 <td><code>n</code></td>
-                                <td><?php esc_html_e('Add nofollow attribute', 'video-popup'); ?><span class="vp-tooltip" data-vp-tooltip="<?php esc_attr_e('Adds rel="nofollow" attribute to prevent search engines from following this link. Useful for SEO optimization.', 'video-popup'); ?>">?</span></td>
+                                <td><?php esc_html_e('Add nofollow attribute', 'video-popup'); ?><span class="vp-tooltip" data-vp-tooltip="<?php esc_attr_e('Adds rel="nofollow" attribute to prevent search engines from following this link.', 'video-popup'); ?>">?</span></td>
                                 <td><code>number</code></td>
                                 <td><?php esc_html_e('0 = disable, and 1 = enable', 'video-popup'); ?></td>
                                 <td><code>0</code></td>
@@ -325,7 +376,7 @@ class Video_Popup_Shortcode_Reference_Page {
             </div>
 
             <!-- Premium Features -->
-            <div class="vp-section vp-premium-features">
+            <div class="vp-section vp-premium_features">
                 <h2><?php esc_html_e('Advanced Attributes (Premium)', 'video-popup'); ?></h2>
 
                 <p>
@@ -333,7 +384,7 @@ class Video_Popup_Shortcode_Reference_Page {
                         printf(
                             // translators: %1$s is opening link tag, %2$s is closing link tag
                             esc_html__('With the %1$sPremium Version%2$s, there are 9 advanced attributes in addition to all the attributes listed above. In this section, we will explain these advanced attributes with examples so you can get an idea.', 'video-popup'),
-                            '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank">',
+                            '<a href="https://videopopup.net/?utm_source=plugin&utm_medium=link&utm_campaign=shortcode_rf_page#get-premium" target="_blank">',
                             '</a>'
                         );
                     ?>
@@ -478,12 +529,12 @@ class Video_Popup_Shortcode_Reference_Page {
 
                     <p><?php esc_html_e('*Note: To apply a 16:9 aspect ratio, enter "16:9" for the height attribute and a pixel value for the width attribute (e. g. 1200px). The height will be calculated automatically based on the width value.', 'video-popup'); ?></p>
 
-                    <div class="vp-premium-btn" style="margin-top: 15px;"><a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank" class="button secondary-button vp-get-premium"><?php esc_html_e('Get Premium Version', 'video-popup'); ?></a></div>
+                    <div class="vp-premium-btn" style="margin-top: 15px;"><a href="https://videopopup.net/?utm_source=plugin&utm_medium=button&utm_campaign=shortcode_rf_page#get-premium" target="_blank" class="button secondary-button vp-get-premium" title="<?php esc_attr_e('After upgrading to Premium, all your popups created with the free version will continue to work seamlessly without the need for edits! Upgrade with confidence.', 'video-popup'); ?>"><?php esc_html_e('Get Premium Version', 'video-popup'); ?></a></div>
                 </div>
             </div>
 
             <!-- On-Page Load Shortcode -->
-            <div id="vp-opl-shortcode" class="vp-section vp-premium-features">
+            <div id="vp-opl-shortcode" class="vp-section vp-premium_features">
                 <h2><?php esc_html_e('On-Page Load Shortcode (Premium)', 'video-popup'); ?></h2>
                 <div class="vp-table-wrapper">
                     <p>
@@ -494,6 +545,18 @@ class Video_Popup_Shortcode_Reference_Page {
                                     '<a href="' . esc_url($opl_settings_url) . '">',
                                     '</a>',
                                     '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#on-page-load-shortcode" target="_blank">',
+                                    '</a>'
+                                );
+                            ?>
+                    </p>
+
+                    <p><strong><?php esc_html_e('Live Demos:', 'video-popup'); ?></strong></p>
+                    <p>
+                        <?php
+                                printf(
+                                    // translators: %1$s is opening link tag, %2$s is closing link tag
+                                    esc_html__('%1$sDemo for Single, Double, and Triple On-Page Load Video Popups%2$s', 'video-popup'),
+                                    '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#s-opl-live-demos" target="_blank">',
                                     '</a>'
                                 );
                             ?>
@@ -643,13 +706,13 @@ After removing "<span style="color:#d6336c;">_opl</span>":
                             printf(
                                 // translators: %1$s is opening link tag, %2$s is closing link tag
                                 esc_html__('Finally, we have provided these questions based on what you might encounter while using our plugin. If you have any questions, please feel free to visit the %1$splugin reference page%2$s and contact us.', 'video-popup'),
-                                '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#support-and-contact" target="_blank">',
+                                '<a href="https://wp-time.com/video-popup-plugin-for-wordpress/#contact" target="_blank">',
                                 '</a>'
                             );
                         ?>
                         </p>
 
-                        <div class="vp-premium-btn" style="margin-top: 15px;"><a href="https://wp-time.com/video-popup-plugin-for-wordpress/#premium-version" target="_blank" class="button secondary-button vp-get-premium"><?php esc_html_e('Get Premium Version', 'video-popup'); ?></a></div>
+                        <div class="vp-premium-btn" style="margin-top: 15px;"><a href="https://videopopup.net/?utm_source=plugin&utm_medium=button&utm_campaign=shortcode_rf_page#get-premium" target="_blank" class="button secondary-button vp-get-premium" title="<?php esc_attr_e('After upgrading to Premium, all your popups created with the free version will continue to work seamlessly without the need for edits! Upgrade with confidence.', 'video-popup'); ?>"><?php esc_html_e('Get Premium Version', 'video-popup'); ?></a></div>
 
                     </div>
 
